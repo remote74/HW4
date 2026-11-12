@@ -1,0 +1,11 @@
+=== Сравнение моделей ===
+
+Fine-tuned Model:
+  F1 (macro): 0.8876
+  Accuracy: 0.8877
+
+Baseline Model:
+  F1 (macro): 0.8211
+  Accuracy: 0.8211
+
+Улучшение: 8.11%

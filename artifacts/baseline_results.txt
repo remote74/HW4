@@ -1,0 +1,13 @@
+Baseline: BERT CLS + Logistic Regression
+----------------------------------------
+Macro F1: 0.8213
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.83      0.82      5000
+           1       0.83      0.81      0.82      5000
+
+    accuracy                           0.82     10000
+   macro avg       0.82      0.82      0.82     10000
+weighted avg       0.82      0.82      0.82     10000
