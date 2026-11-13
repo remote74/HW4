@@ -1,12 +1,14 @@
 import gradio as gr
 import torch
-from model_repository import tokenizer, model_ft
+from model_repository import tokenizer, model_ft, device
 
 def predict_sentiment(text):
     """
     Функция для Gradio интерфейса
     """
     inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=128)
+
+    inputs = {key: val.to(device) for key, val in inputs.items()}
 
     with torch.no_grad():
         outputs = model_ft(**inputs)
